@@ -40,25 +40,36 @@ Features:
 ## Example
 
 ```dart
-import 'package:flutter/material.dart';
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          VKIcon(size: 10, color: Colors.red),
-          SizedBox(height: 10),
-          InstaIcon(size: 20, color: Colors.yellow),
-          SizedBox(height: 10),
-          TGIcon(size: 30, color: Colors.green),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            VKIcon(size: 50, color: Colors.red),
+            InstaIcon(size: 50, color: Colors.yellow),
+            TGIcon(size: 50, color: Colors.black),
+            XIcon(size: 50, color: Colors.amber),
+            DiscIcon(size: 50, color: Colors.orange),
+            MailIcon(size: 50, color: Colors.blue),
+            GitIcon(size: 50, color: Colors.lightBlue),
+            PinIcon(size: 50, color: Colors.yellowAccent),
+            YouIcon(size: 50, color: Colors.redAccent),
+            TwitIcon(size: 50, color: Colors.blueAccent),
+            LIIcon(size: 50, color: Colors.greenAccent),
+            FaceIcon(size: 50, color: Colors.green),
+          ],
+        ),
       ),
     );
   }
-} 
+}
 ```
+
+<p align="center">
+  <img src="assets/images/screen.png" width="350"/>
+</p>
