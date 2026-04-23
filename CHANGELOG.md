@@ -4,4 +4,8 @@
 
 ## 0.0.2
 
-Final release 
+Final release
+
+## 0.0.3
+
+Update md 
