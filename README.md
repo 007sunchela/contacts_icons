@@ -69,7 +69,4 @@ class HomePage extends StatelessWidget {
   }
 }
 ```
-
-<p align="center">
-  <img src="assets/images/screen.png" width="350"/>
-</p>
+<img src="assets/images/screen.png" width="350"/> 
