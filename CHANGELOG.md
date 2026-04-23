@@ -8,4 +8,8 @@ Final release
 
 ## 0.0.3
 
-Update md 
+Update md
+
+## 0.0.4
+
+Update pubspec 
