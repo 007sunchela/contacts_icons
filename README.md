@@ -1,39 +1,64 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Contacts Icons
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+This package provides basic contact widgets in the form of icons. The icons were borrowed from the font_awesome_flutter package. The icons represent social networks.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+1. Add the latest version of package to your pubspec.yaml:
+```dart
+dependencies:
+  contacts_icons: ^0.0.1
+```
+
+2. Import the package and use it in your Flutter App:
+```dart
+import 'package:contacts_icons/contacts_icons.dart';
+```
+
+## Available Icons
+
+Available Icons:
+- VK
+- YouTube
+- Instagram
+- Twitter (X)
+- Facebook
+- TG
+- Pinterest
+- Discord
+- Twitch
+- Mail
+- LinkedIn
+- GitHub
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Features:
+- resizing the icon;
+- changing the icon color.
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## Example
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          VKIcon(size: 10, color: Colors.red),
+          SizedBox(height: 10),
+          InstaIcon(size: 20, color: Colors.yellow),
+          SizedBox(height: 10),
+          TGIcon(size: 30, color: Colors.green),
+        ],
+      ),
+    );
+  }
+} 
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
